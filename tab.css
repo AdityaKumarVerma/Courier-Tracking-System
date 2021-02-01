@@ -1,0 +1,103 @@
+	@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+.tabinator {
+  background: #fff;
+  padding: 10px;
+  font-family: Open Sans;
+}
+.tabinator .radio {
+  display: none;
+}
+.tabinator label {
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 15px 25px;
+  color:black;
+  margin-bottom: -1px;
+  margin-left: -1px;
+}
+.tabinator label:before {
+  content:'';
+  display:block;
+  width:100%;
+  height:15px;
+  background-color:#fff;
+  position:absolute;
+  bottom:0px;
+  left:0;
+  z-index:10;  
+}
+.tabinator label:hover {
+  color: #888;
+  cursor: pointer;
+}
+.tabinator .radio:checked + label {
+  position: relative;
+  color: #000;
+  background:;
+  color:#f61a49;
+  border: 1px solid #bbb;
+  border-bottom: 1px solid #fff;
+  border-radius: 5px 5px 0 0;
+  font-weight:999;
+  font-size:1.7vw;
+}
+.tabinator input:checked + label:after {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  
+}
+#complaint, #track_complaint, #feedback {
+  display: none;
+  border-top: 1px solid #bbb;
+  padding: 15px;
+}
+#tab1:checked ~ #complaint,
+#tab2:checked ~ #track_complaint,
+#tab3:checked ~ #feedback {
+  display: block;
+  box-shadow: 0 0 15px #939393;
+}
+.complaint{
+	width:60%;
+	max-height:100%;
+	text-align:center;
+}
+.complaint_name{
+	width: 40%;
+	text-align:center;
+    
+	padding-left:15%;
+    display: inline-block;
+    box-sizing: border-box;
+	border:none;
+    border-bottom: 2px solid  #008CBA;
+    border-radius: 5px;
+    font-size: 1.2VW;
+    background-color: white;
+    padding: 12px 20px 12px 12px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+.complaint_text{
+	width: 100%;
+	text-align:center;
+    
+	padding:0%;
+    display: inline-block;
+    box-sizing: border-box;
+	border:none;
+    border-bottom: 2px solid  #008CBA;
+    border-radius: 5px;
+    font-size: 1.2VW;
+    background-color: white;
+    padding: 12px 20px 12px 12px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+.h2{
+	color:black;
+	font-size:1vw;
+	font-weight:999;
+}
